@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Wifey ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .quote-carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .quotes {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .quote {
+            min-width: 100%;
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff758c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Happy Birthday My Wifey ❤️</h1>
+        <p>Every moment with you is special. Here’s a little surprise just for you!</p>
+    </header>
+
+    <section class="section" id="wish">
+       <h2>I love you sooooo much jaan 😘😘❤️❤️❤️💋💋💋</h2>
+        <p>Happy Birthday, my babe! You make my life brighter with your love and care. I can’t wait to spend forever with you "Fi'Duniya wal Aakhira". ❤️</p>
+    </section>
+
+    <section class="section" id="dilKiBaate">
+       
+        <h2>Dil ki Baate ❤️</h2>
+        <p>Tu Zindagi hai meri, Tu hi meri dhadkan hai.💫
+            Joh naanga hu rab se wahi meri dua hai❤️
+            Tere saath chalke zindagi ka safar pura karna hai😘
+            Tere saath zindagi ko aakhir pal tak jeena hai
+            Tu dil pe raaz karti hai meri zindagi ban chuki hai🥰
+            Tu dur chale gayi agar toh zindagi khatam ho sakti hai😔
+            Meri jaan tu humesha mera saath dena mera haath kabhi na chhodna😭
+            Is dil ko samhale rakhna apne paas iska achee se khayal rakhna🥺
+            Tujhe apna sab kuch maana hu bas mujhe aise hi zindagi bhar pyaar karte rehna❤️❤️</p>
+    </section>
+
+    <section class="section" id="quotes">
+        <h2>✨ Quotes for You</h2>
+        <div class="quote-carousel">
+            <div class="quotes">
+                <div class="quote">"You make my world brighter just by being in it." 🌸</div>
+                <div class="quote">"I love you to the moon and back." 🌙</div>
+                <div class="quote">"With you, every day is a celebration." 🎁</div>
+                <div class="quote">"You’re my favorite adventure." 🌍</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <h2>📸 Our Memories</h2>
+        <div class="gallery">
+            <img src="pic1.jpg" alt="Memory 1">
+            <img src="pic2.jpg" alt="Memory 2">
+            <img src="pic3.jpg" alt="Memory 3">
+            <img src="pic4.jpg" alt="Memory 4">
+        </div>
+    </section>
+
+    <section class="section" id="video">
+        <h2>🎥 A Special Message for You</h2>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Your jaan Aabid Shaikh</p>
+    </footer>
+
+    <script>
+        let index = 0;
+        function rotateQuotes() {
+            const quotes = document.querySelector('.quotes');
+            index++;
+            if (index >= quotes.children.length) {
+                index = 0;
+            }
+            quotes.style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(rotateQuotes, 3000);
+    </script>
+</body>
+</html>
